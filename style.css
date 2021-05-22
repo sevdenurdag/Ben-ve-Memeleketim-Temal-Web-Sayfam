@@ -1,0 +1,180 @@
+.sablon {
+    width: 880;
+    height: 980px;
+    ;
+}
+
+.menu {
+    width: 950;
+    height: 30px;
+    ;
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+    background: royalblue;
+    border-radius: 15px;
+}
+
+.bilgilendirme {
+    width: 1500px;
+    height: 400px;
+    ;
+    float: left;
+    background: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+}
+
+.kutu1 {
+    width: 375px;
+    height: auto;
+    ;
+    border: 1px;
+    float: left;
+    background-color: rgb(118, 162, 243);
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font: bold;
+    size: 13px;
+}
+
+.kutu2 {
+    width: 375px;
+    height: auto;
+    ;
+    float: left;
+    background-color: rgb(90, 113, 219);
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.kutu3 {
+    width: 375px;
+    height: auto;
+    float: left;
+    background-color: rgb(66, 107, 218);
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+    color: #ffffff;
+    font: bold;
+    size: 13px;
+}
+
+.kutu4 {
+    width: 375px;
+    height: auto;
+    float: left;
+    background-color: royalblue;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    display: block;
+    width: 249px;
+    height: 100px;
+    text-decoration: none;
+    text-align: center;
+    font: 17px tahoma;
+    color: rgb(255, 255, 255)
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.slider-tas {
+    width: 1000px;
+    height: 640px;
+    border: 5px solid royalblue;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-tas ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.slider-tas ul li {
+    position: absolute;
+}
+
+.slider-tas ul li:nth-of-type(1) {
+    left: 0px;
+}
+
+.slider-tas ul li:nth-of-type(2) {
+    left: 1000px;
+}
+
+.slider-tas ul li:nth-of-type(3) {
+    left: 2000px;
+}
+
+.slider-tas ul li:nth-of-type(4) {
+    left: 3000px;
+}
+
+.slider-tas ul li:nth-of-type(5) {
+    left: 4000px;
+}
+
+.slider {
+    position: absolute;
+    left: 0px;
+    animation-name: slayt;
+    animation-duration: 20s;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.slider:hover {
+    animation-play-state: paused;
+}
+
+.slider-tas ul li:hover {
+    transform: scale(1.1);
+}
+
+@keyframes slayt {
+    0% {
+        left: 0px;
+    }
+    25% {
+        left: -1000px;
+    }
+    50% {
+        left: -2000px;
+    }
+    75% {
+        left: -3000px;
+    }
+    100% {
+        left: -4000px;
+    }
+}
+
+.footer {
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+}
