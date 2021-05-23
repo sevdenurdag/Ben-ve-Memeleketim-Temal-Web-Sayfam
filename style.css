@@ -1,6 +1,6 @@
 .sablon {
     width: 880;
-    height: 1800px;
+    height: 2200px;
     ;
 }
 
@@ -190,6 +190,7 @@
 }
 
 .footer {
+    margin: 20px 0px 0px 0px;
     background-color: royalblue;
     color: white;
     text-align: center;
